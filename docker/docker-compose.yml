@@ -1,0 +1,9 @@
+rachel:
+    image: mrneel/rachel-apache2
+    restart: always
+    ports:
+        # Webserver
+        - "80:80"
+    volumes:
+        - /var/www/modules:/var/www/modules # composer caching
+    container_name: 
